@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recuperación de Contraseña</title>
+    <script src="/js/vue.global.prod.js"></script>
+    <link rel="stylesheet" href="../css/contraseña.css" />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <img
+        class="logo"
+        src="./img/fina.jpg"
+        alt="Financiera para el Bienestar"
+      />
+      <div class="form-box">
+        <h3>Rechuperar Contraseña</h3>
+        <form @submit.prevent="submit">
+          <input type="email" v-model="email" placeholder="Correo" required />
+          <input
+            type="password"
+            v-model="password"
+            placeholder="Contraseña"
+            required
+          />
+          <input
+            type="password"
+            v-model="repeatPassword"
+            placeholder="Repetir contraseña"
+            required
+          />
+          <button class="btncontra" type="submit">Validar</button>
+          <div v-if="message" class="message">{{ message }}</div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/contraseña.js"></script>
+  </body>
+</html>

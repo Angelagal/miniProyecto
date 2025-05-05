@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.form-box {
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(6, 80, 11, 0.993);
+  background: radial-gradient(circle, #009900, #004d00);
+  opacity: 1; /* Ajusta el valor entre 0 (totalmente transparente) y 1 (sin transparencia) */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-box button {
+  background-color: #c78c00;
+  color: rgb(54, 54, 54);
+  border: none;
+  padding: 10px;
+  left: 70px;
+  position: relative;
+  width: 40%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btncontra {
+  color: black;
+}
+.message {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
